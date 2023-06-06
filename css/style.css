@@ -8111,6 +8111,7 @@ ul {
 .section-size__table {
   margin-bottom: 30px;
   border-collapse: collapse;
+  word-break: break-word;
 }
 .section-size__table td {
   padding: 5px 26px 4px 13px;
