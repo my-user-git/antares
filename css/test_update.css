@@ -501,8 +501,12 @@ ul {
   .section-size__card.ui-widget {
     max-width: inherit;
     width: 100%;
+    padding: 20px 30px 24px 20px;
   }
   .section-size__sublist {
     grid-template-columns: 75%;
+  }
+  .section-size__table td {
+    font-size: 15px;
   }
 }/*# sourceMappingURL=test_update.css.map */
