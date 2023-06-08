@@ -7,10 +7,6 @@
     .section-banner {
         &__desc {
             width: 50%;
-
-            &-txt:last-child {
-                display: none;
-            }
         }
     }
 
@@ -55,12 +51,6 @@
 
     .section-banner {
         margin-bottom: 50px;
-
-        &__desc {
-            &-txt:nth-child(2) {
-                display: none;
-            }
-        }
     }
 
     .section-advantages {
@@ -106,18 +96,13 @@
 
     .section-banner {
         &__desc {
-            width: 100%;
-            top: inherit;
-            bottom: 0;
-            left: 0;
-            padding: 50px 50px 5% 50px;
+            width: 70%;
         }
 
-        &__button {
-            margin-top: 0;
+        &__desc {
+            padding: 40px 0 30px 40px;
         }
     }
-
 
     .section-advantages {
         &__h2 {
@@ -172,14 +157,6 @@
 }
 
 @media (max-width: 767px) {
-    .section-banner {
-        &__desc {
-
-            &-txt {
-                display: none;
-            }
-        }
-    }
 
     .section-advantages {
         &__h2 {
@@ -216,6 +193,18 @@
 }
 
 @media (max-width: 580px) {
+    .section-banner {
+        &__desc {
+            width: 100%;
+            padding: 20px 20px 30px 20px;
+        }
+
+        &__button {
+            padding: 15px 25px;
+        }
+    }
+
+
     .section-size {
         &__card.ui-widget {
             max-width: inherit;

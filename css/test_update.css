@@ -50,18 +50,27 @@ ul {
 }
 .section-banner__wrap {
   position: relative;
+  display: grid;
+  grid-template-areas: "all";
 }
 .section-banner__picture {
   position: relative;
+  grid-area: all;
   display: block;
-  width: auto;
+  width: 100%;
   height: 100%;
 }
+.section-banner__img {
+  width: auto;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 .section-banner__desc {
-  position: absolute;
+  position: relative;
+  grid-area: all;
   width: 30%;
-  top: 57px;
-  left: 80px;
+  padding: 57px 0 30px 80px;
   font-family: "Montserrat", arial, sans-serif;
   font-size: 16px;
   line-height: 26px;
@@ -353,9 +362,6 @@ ul {
   .section-banner__desc {
     width: 50%;
   }
-  .section-banner__desc-txt:last-child {
-    display: none;
-  }
   .section-size__txt {
     grid-template-columns: 1fr;
     grid-template-areas: "top" "middle" "bottom";
@@ -384,9 +390,6 @@ ul {
   }
   .section-banner {
     margin-bottom: 50px;
-  }
-  .section-banner__desc-txt:nth-child(2) {
-    display: none;
   }
   .section-advantages {
     margin-bottom: 50px;
@@ -421,14 +424,10 @@ ul {
     line-height: 50px;
   }
   .section-banner__desc {
-    width: 100%;
-    top: inherit;
-    bottom: 0;
-    left: 0;
-    padding: 50px 50px 5% 50px;
+    width: 70%;
   }
-  .section-banner__button {
-    margin-top: 0;
+  .section-banner__desc {
+    padding: 40px 0 30px 40px;
   }
   .section-advantages__h2 {
     text-align: center;
@@ -470,9 +469,6 @@ ul {
   }
 }
 @media (max-width: 767px) {
-  .section-banner__desc-txt {
-    display: none;
-  }
   .section-advantages__h2 {
     font-size: 27px;
     line-height: 36px;
@@ -498,6 +494,13 @@ ul {
   }
 }
 @media (max-width: 580px) {
+  .section-banner__desc {
+    width: 100%;
+    padding: 20px 20px 30px 20px;
+  }
+  .section-banner__button {
+    padding: 15px 25px;
+  }
   .section-size__card.ui-widget {
     max-width: inherit;
     width: 100%;
